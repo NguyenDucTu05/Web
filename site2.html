@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12TN3 | Hành Trình Rực Rỡ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="site2.css">
+    <link rel="icon" type="image/x-icon" href="Pics/Favicon/ok.png">
+</head>
+
+<body>
+    <div class="background-animations">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    <nav class="navbar glass">
+        <div class="logo-area">
+            <img src="Pics/Favicon/ok.png" alt="Logo">
+            <div class="name-brand">
+                <span class="num">12</span><span class="tn">TN</span><span class="three">3</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">TRANG CHỦ</a></li>
+            <li><a href="site2.html">ĐĂNG NHẬP</a></li>
+            <li><a href="site3.html">GIỚI THIỆU</a></li>
+            <li><a href="HomePage.html">LIÊN HỆ</a></li>
+        </ul>
+        <div class="search-box glass">
+            <input type="text" placeholder="Tìm kiếm...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+    <form action="https://script.google.com/macros/s/AKfycbxCWepsvbV8GIraLJdaVCTolfkMjz_iQBMCm1OtHHwjvCMdmsI5cXHydlm0dAuNXmyU2g/exec" method="POST">
+        <h1>FORM ĐĂNG KÍ</h1>
+        <span>Sử dụng mạng xã hội để đăng kí</span>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <span>Hoặc sử dụng email</span>
+        <input type="text" name="fullName" placeholder="Họ và tên" required>
+        <input type="date" name="birthday" required>
+        <div style="display: flex; align-items: center; gap: 5px; padding: 10px;">
+            <input  type="radio" id="male" name="nam" value="Nam"/>
+            <label style="margin-right: 50px;" for="male">Nam</label>
+            <input type="radio" id="female" name="nam" value="Nữ"/>
+            <label for="female">Nữ</label>
+        </div>
+        <div style="padding: 10px; gap: 10px;">
+            <label name="country" for="country-select">Chọn Tỉnh/Thành phố</label>
+                <select style="padding: 2px; border-radius: 10px;" name="country" id="country-select" required>
+                    <option value="">--Vui lòng chọn--</option>
+                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Nam Định">Nam Định</option>
+                    <option value="Thanh Hóa">Thanh Hóa</option>
+                    <option value=">Nghệ An">Nghệ An</option>
+                    <option value="Cao Bằng">Cao Bằng</option>
+                    <option value="Tiền Giang">Tiền Giang</option>
+                    <option value=">Hải Phòng">Hải Phòng</option>
+                </select>
+        </div> 
+        <input type="text" type="text" name="email" placeholder="Email hoặc Số điện thoại" required>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+        <div style="display: flex; align-items: center; padding: 10px; gap: 5px; white-space: nowrap;">
+            <input type="checkbox" id="license" name="dieukhoan" required/>
+            <label for="license"><a href="https://docs.google.com/document/d/10M6rkRD_dxkbKTlI167kq2l_RVbr3wCFliqxbTrhszg/edit?tab=t.0#heading=h.f77w1bfjc8jq" style="text-decoration: underline;">Điều khoản và sử dụng</a></label>
+        </div>
+        
+        
+        <button type="submit" class="button-signup">Đăng kí</button>
+    </form>
+</div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>FORM ĐĂNG NHẬP</h1>
+                    <span>Sử dụng mạng xã hội để đăng nhập</span>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <span>Hoặc sử dụng email</span>
+                    <input type="email" type="number" name="email" placeholder="Email hoặc Số điện thoại">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Quên mật khẩu?</a>
+                    <button class="button-login" id="btnShow">Đăng nhập</button>
+
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1 class="bordered">Chào mừng đến với kỉ yếu 12TN3 </h1>
+                        <p></p>
+                        <button class="hidden green" id="login"><span class="text">&#8592; Đăng nhập</span></button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1 class="bordered"> Chào mừng đến với kỉ yếu 12TN3 </h1>
+                        <p></p>
+                        <button class="hidden orange" id="register" href="HomePage.html"><span class="text"> Đăng kí &#8594;</span></button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="site2.js"></script>
+</body>
+
+</html>
