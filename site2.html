@@ -16,8 +16,6 @@
 
 <body>
     <div class="background-animations">
-        <div class="blob"></div>
-        <div class="blob"></div>
     </div>
     <nav class="navbar glass">
         <div class="logo-area">
@@ -45,11 +43,13 @@
         <h1>FORM ĐĂNG KÍ</h1>
         <input type="text" name="fullName" placeholder="Họ và tên" required>
         <input type="date" name="birthday" required>
-        <div style="display: flex; align-items: center; gap: 5px; padding: 10px;">
+        <div style="display: flex; align-items: center; gap: 5px; padding: 5px;">
             <input  type="radio" id="male" name="nam" value="Nam"/>
             <label style="margin-right: 50px;" for="male">Nam</label>
             <input type="radio" id="female" name="nam" value="Nữ"/>
             <label for="female">Nữ</label>
+            <input type="radio" id="lgbt" name="lgbt" value="Luôn giữ Bình Tĩnh"/>
+            <label for="female">Luôn giữ Bình Tĩnh</label>
         </div>
         <div style="padding: 10px; gap: 10px;">
             <label name="country" for="country-select">Chọn Tỉnh/Thành phố</label>
@@ -89,12 +89,12 @@
             <div class="toggle-container">
                 <div class="toggle">
                     <div class="toggle-panel toggle-left">
-                        <h1 class="bordered">Chào mừng đến với kỉ yếu 12TN3 </h1>
+                        <h1 style="font-family:Denk One,sans-serif;">CHÀO MỪNG ĐẾN VỚI KỈ YẾU TN3 </h1>
                         <p></p>
                         <button class="hidden green" id="login"><span class="text">&#8592; Đăng nhập</span></button>
                     </div>
                     <div class="toggle-panel toggle-right">
-                        <h1 class="bordered"> Chào mừng đến với kỉ yếu 12TN3 </h1>
+                        <h1 style="font-family: Denk One, sans-serif;">CHÀO MỪNG ĐẾN VỚI KỈ YẾU TN3 </h1>
                         <p></p>
                         <button class="hidden orange" id="register" href="HomePage.html"><span class="text"> Đăng kí &#8594;</span></button>
                     </div>
