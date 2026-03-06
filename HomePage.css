@@ -13,7 +13,7 @@
 }
 body {
   display: flex;
-  align-item:center;
+  align-items:center;
   font-family: "Kenia", sans-serif;
   background: #0b0f1a;
   background-image: radial-gradient(
@@ -561,4 +561,5 @@ position: fixed;
     left: 23px !important;
   }
 }
+
 
