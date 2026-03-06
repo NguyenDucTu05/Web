@@ -62,7 +62,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 95%;
-  max-width: 1200px;
+  max-width: 1000px;
+  max-height: 50px;
   padding: 12px 30px;
   border-radius: 50px;
   display: flex;
@@ -112,6 +113,7 @@ body {
 }
 
 .search-box {
+  max-height: 30px;
   position: relative;
   display: flex;
   align-items: center;
