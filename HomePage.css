@@ -76,7 +76,7 @@ body {
   gap: 10px;
 }
 .logo-area img {
-  height: 35px;
+  height: 25px;
 }
 .logo-area img:hover {
   transition: 0.3s;
@@ -95,14 +95,14 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
 }
 .nav-links a {
   font-family: "Plaster", system-ui;
   font-style: normal;
   text-decoration: none;
   color: #ccc;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -119,7 +119,7 @@ body {
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   transition: all 0.3s ease;
   margin-left: 20px;
 }
@@ -238,7 +238,7 @@ body {
 
 footer {
   margin-top: 50px;
-  padding: 50px 5% 20px 5%;
+  padding: 20px 5% 10px 5%;
   border-radius: 50px 50px 0 0;
 }
 .footer-content {
@@ -303,22 +303,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   width: fit-content;
-  perspective: 1000px;
   margin: auto;
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 50px;
+  padding: 10px;
 }
 .card {
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease-out;
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
