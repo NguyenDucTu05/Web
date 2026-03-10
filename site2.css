@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+.img-background {
+  background-image: url("Pics/BG image/8.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  filter: blur(10px);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  background: linear-gradient(to right, #e2e2e2, #abbeff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.container {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  max-width: 100%;
+  min-height: 500px;
+  z-index: 10;
+  margin-top: 120px;
+  box-shadow: 
+    0 0 5px #ffffff,                
+    0 0 35px rgba(0, 149, 255, 0.8), 
+    0 0 50px rgba(0, 102, 204, 0.5), 
+    0 0 70px rgba(0, 51, 153, 0.2); 
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+.container span {
+  font-size: 12px;
+}
+
+.container a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+}
+
+/* nut dang nhap */
+.button-login {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #578FCA;
+  border: 2px solid #578FCA;
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.button-login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #578FCA;
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button-login:hover::before {
+  scale: 3;
+}
+
+.button-login:hover {
+  color: #fff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button-login:active {
+  scale: 1;
+}
+
+.return {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  color: #555;
+  font-family: Denk One, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 50px;
+  background-color: white;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-return .arrow {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.btn-return:hover {
+  background-color: #f8f8f8;
+  border-color: #00a859;
+  color: #00a859;
+  transform: translateX(-5px);
+}
+
+.button-signup {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #578FCA;
+  border: 2px solid #578FCA;
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.button-signup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #578FCA;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button-signup:hover::before {
+  scale: 3;
+}
+
+.button-signup:hover {
+  color: #fff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button-signup:active {
+  scale: 1;
+}
+
+
+/* nut mui ten */
+.toggle-container button.hidden {
+  background-color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 400ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+
+
+
+
+
+/* cai nut tren bang mau */
+
+.hidden {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: white !important;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #FFCC00;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  font-weight: 600;
+}
+/* hieu ung nut mui ten */
+.green {
+  color: #1c1c29;
+}
+
+.orange {
+  color:#000000;
+}
+
+.hidden .text {
+  font-size: 17px !important;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  letter-spacing: 1px !important;
+}
+
+.green:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #578FCA;
+}
+
+.orange:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #578FCA;
+}
+
+.hidden:active {
+  transform: scale(0.9);
+}
+
+.container button.hidden {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.container form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.container input {
+  background-color: #eee;
+  border: none;
+  margin: 5px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container.active .sign-in {
+  transform: translateX(100%);
+}
+
+.sign-up {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.active .sign-up {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: move 0.6s;
+}
+
+@keyframes move {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* cai mieng bay qua bay lai khi bam mui ten */
+
+.toggle-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-radius: 150px 0 0 100px;
+  z-index: 1000;
+}
+
+.container.active .toggle-container {
+  transform: translateX(-100%);
+  border-radius: 0 150px 100px 0;
+}
+
+
+.toggle {
+  background-color: #ffffff;
+  height: 100%;
+  background: linear-gradient(to right,#578FCA,#A1E3F9,#578FCA);
+  color: #000000;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle {
+  transform: translateX(50%);
+}
+
+.toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+  transform: translateX(-200%);
+}
+
+.container.active .toggle-left {
+  transform: translateX(0);
+}
+
+.toggle-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.active .toggle-right {
+  transform: translateX(200%);
+}
+:root {
+  --primary: #45eb45;
+  --main: #ffff;
+  --secondary: #ffa500;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f1a;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #1a2235 0%,
+    #0b0f1a 100%
+  );
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+@keyframes move {
+  from {
+    transform: translate(-10%, -10%);
+  }
+  to {
+    transform: translate(20%, 20%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1000px;
+  max-height: 50px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-area img {
+  height: 25px;
+}
+.logo-area img:hover {
+  transition: 0.3s;
+  transform: scale(1.3);
+}
+.name-brand {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.num {
+  color: rgb(44, 245, 44);
+}
+.three {
+  color: var(--secondary);
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-links a {
+  font-family: "Plaster", system-ui;
+  font-style: normal;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px var(--main);
+}
+
+.search-box {
+  max-height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+.search-box:focus-within {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 10px;
+  font-family: "Inter", sans-serif;
+  width: 150px;
+  transition: width 0.4s ease;
+}
+
+.search-box input:focus {
+  width: 220px;
+}
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+.search-box button {
+  background: #FFCC00;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+.search-box button:hover {
+  background: #ffcccc;
+  transform: scale(1.05);
+}
+.search-box button {
+  background: white;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+.search-box button:hover {
+  background: #ffcccc;
+}
+
+
+
+
+/*#578FCA,#A1E3F9,#578FCA);*/
+
+
+
+.click {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  --glow-color: #96abc1;
+  --glow-spread-color: #426e7c;
+  --btn-color: #2b4867;
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow:
+    0 0 1em 0.1em var(--glow-color),
+    0 0 2em 0.5em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.2em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.click::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.click:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow:
+    0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.45em 0.2em var(--glow-color);
+}
+
+.click:active {
+  box-shadow:
+    0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}

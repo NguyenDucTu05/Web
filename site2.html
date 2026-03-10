@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12TN3 | Hành Trình Rực Rỡ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Fuzzy+Bubbles:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site2.css">
+    <link rel="icon" type="image/x-icon" href="Pics/Favicon/ok.png">
+    <script src="singin.js" defer></script>
+</head>
+
+<body>
+
+    
+    <nav class="navbar glass">
+        <div class="logo-area">
+            <img src="Pics/Favicon/ok.png" alt="Logo">
+            <div class="name-brand">
+                <span class="num">12</span><span class="tn" style="color:white">TN</span><span class="three">3</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">TRANG CHỦ</a></li>
+            <li><a href="site2.html">ĐĂNG NHẬP</a></li>
+            <li><a href="site3.html">GIỚI THIỆU</a></li>
+            <li><a href="HomePage.html#contact">LIÊN HỆ</a></li>
+        </ul>
+        <div class="search-box glass">
+            <input type="text" placeholder="Tìm kiếm...">
+            <i style="color: rgb(255, 255, 255);" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <main>
+
+
+
+
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+    <form action="https://script.google.com/macros/s/AKfycbx03G3qTIcFdagWs0JlrtlmJflk2WCzvXpu_Q9ZomJuPqeGPp9vNQnnXbUjwkNGQX7RhQ/exec" method="POST">
+        <h1 style="font-family: Denk One, sans-serif;">ĐĂNG KÍ</h1>
+        <input type="text" name="fullName" placeholder="Họ và tên" required>
+        <input type="date" name="birthday" required>
+        <div style="display: flex; align-items: center; gap: 5px; padding: 5px;">
+            <input  type="radio" id="male" name="nam" value="Nam"/>
+            <label style="margin-right: 50px;" for="male">Nam</label>
+            <input type="radio" id="female" name="nam" value="Nữ"/>
+            <label for="female">Nữ</label>
+        </div>
+
+
+
+
+
+
+
+        <div style="padding: 10px; gap: 10px;">
+            <label name="country" for="country-select">Chọn Tỉnh/Thành phố</label>
+                <select style="padding: 2px; border-radius: 10px;" name="country" id="country-select" required>
+                    <option value="">--Vui lòng chọn--</option>
+                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Nam Định">Nam Định</option>
+                    <option value="Thanh Hóa">Thanh Hóa</option>
+                    <option value="Nghệ An">Nghệ An</option>
+                    <option value="Cao Bằng">Cao Bằng</option>
+                    <option value="Tiền Giang">Tiền Giang</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                </select>
+        </div> 
+
+
+
+
+
+        <input type="text" type="text" name="email" placeholder="Email hoặc Số điện thoại" required>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+        <div style="display: flex; align-items: center; padding: 10px; gap: 5px; white-space: nowrap;">
+            <input type="checkbox" id="license" name="dieukhoan" required/>
+            <label for="license"><a href="https://docs.google.com/document/d/10M6rkRD_dxkbKTlI167kq2l_RVbr3wCFliqxbTrhszg/edit?tab=t.0#heading=h.f77w1bfjc8jq" style="text-decoration: underline;">Điều khoản và sử dụng</a></label>
+        </div>
+        
+        
+        <button type="submit" class="button-signup">Đăng kí</button>
+    </form>
+</div>
+
+
+
+            <div class="form-container sign-in">
+                <form>
+                    <h1 style="font-family: Denk One, sans-serif;">ĐĂNG NHẬP</h1>
+                    <input type="fulName" id="name" placeholder="Tên đăng nhập" required>
+                    <input type="email" type="number" name="email" placeholder="Email hoặc Số điện thoại" required>
+                    <input type="password" placeholder="Password" required>
+                    <button class="button-login" id="click">Đăng nhập</button>
+                </form>
+            </div>
+
+
+
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1 style="font-family:Denk One,sans-serif;">CHÀO MỪNG ĐẾN VỚI KỈ YẾU TN3 NHE </h1>
+                        <p></p>
+                        <button class="hidden green" id="login"><span class="text">&#8592; Đăng nhập</span></button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1 style="font-family: Denk One, sans-serif;">CHƯA CÓ TÀI KHOẢN HỎ ?</h1>
+                        <p></p>
+                        <button class="hidden orange" id="register" href="HomePage.html"><span class="text"> Đăng kí &#8594;</span></button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+        <br><br><br> <br><br>     
+            <a href="site3.html" style="text-decoration: none">
+                    <button class="click">Tiếp Tục &#10132 <h4>Đã đăng kí?</h4  ></button>
+                   
+                </a>
+                <script src="site2.js"></script>
+                <br><br><br> <br><br>  <br><br><br> <br><br>                 
+            </body>
+            
+</html>
